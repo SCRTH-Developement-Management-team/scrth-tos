@@ -1,8 +1,3 @@
-/* ============================================================
-   SCRTH — visual identity inspired by sectly.online
-   Dark dev-portfolio surface, amber signal accent, mono tags.
-   ============================================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root{
@@ -45,7 +40,6 @@ a:focus-visible, button:focus-visible{
 
 code, .mono{ font-family: var(--font-mono); }
 
-/* ---------- Header ---------- */
 
 .site-header{
   position: sticky;
@@ -130,7 +124,6 @@ code, .mono{ font-family: var(--font-mono); }
   .nav-toggle{ display: flex; }
 }
 
-/* ---------- Hero ---------- */
 
 .hero{
   max-width: 1080px;
@@ -167,7 +160,6 @@ code, .mono{ font-family: var(--font-mono); }
   margin: 0;
 }
 
-/* ---------- Layout: TOC + content ---------- */
 
 .page{
   max-width: 1080px;
@@ -289,7 +281,6 @@ code, .mono{ font-family: var(--font-mono); }
 }
 .contact-list dd{ margin: 0; font-weight: 500; color: var(--text); }
 
-/* ---------- Badges / pills (tech-tag style, sectly-inspired) ---------- */
 
 .badge-row{ display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 18px; }
 .badge{
@@ -303,7 +294,6 @@ code, .mono{ font-family: var(--font-mono); }
 }
 .badge.accent{ color: var(--accent); border-color: rgba(233, 30, 99, 0.3); background: var(--accent-soft); }
 
-/* ---------- Form embed ---------- */
 
 .form-embed{
   margin-top: 20px;
@@ -324,8 +314,6 @@ code, .mono{ font-family: var(--font-mono); }
   font-size: 0.85rem;
   color: var(--text-faint);
 }
-
-/* ---------- Coming-soon chart placeholder ---------- */
 
 .chart-placeholder{
   display: flex;
@@ -363,7 +351,6 @@ code, .mono{ font-family: var(--font-mono); }
   color: var(--text-faint);
 }
 
-/* ---------- Footer ---------- */
 
 .site-footer{
   text-align: center;

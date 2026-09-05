@@ -1,4 +1,3 @@
-// Mobile navigation toggle
 const navToggle = document.getElementById('navToggle');
 const mobileNav = document.getElementById('mobileNav');
 
@@ -16,7 +15,6 @@ if (navToggle && mobileNav) {
   });
 }
 
-// Highlight the active section in the in-page table of contents while scrolling
 const sections = document.querySelectorAll('.content section[id]');
 const tocLinks = document.querySelectorAll('.toc a');
 

@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCRTH — Admin AI system</title>
+<title>SCRTH — Application form chart &amp; data</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <span class="brand">SCRTH</span>
     <nav class="top-nav" aria-label="Navigation principale">
       <a href="index.html">Privacy policy &amp; TOS</a>
-      <a href="admin-ai-system.html" class="active">Admin AI system</a>
-      <a href="application-form-chart-data.html">Application form chart &amp; data</a>
+      <a href="admin-ai-system.html">Admin AI system</a>
+      <a href="application-form-chart-data.html" class="active">Application form chart &amp; data</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -22,69 +22,42 @@
   </div>
   <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
     <a href="index.html">Privacy policy &amp; TOS</a>
-    <a href="admin-ai-system.html" class="active">Admin AI system</a>
-    <a href="application-form-chart-data.html">Application form chart &amp; data</a>
+    <a href="admin-ai-system.html">Admin AI system</a>
+    <a href="application-form-chart-data.html" class="active">Application form chart &amp; data</a>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <span class="eyebrow">Public tool</span>
-    <h1>Admin AI system</h1>
-    <p class="updated">Everyone can contribute to this project, if you're interested, please head to deadslights!</p>
+    <span class="eyebrow">Work in progress</span>
+    <h1>Application form chart &amp; data</h1>
+    <p class="updated">Here will be shown stats about SCRTH apps, it will show most failed & passed questions, passrate etc...</p>
   </section>
 
-  <div class="page">
-    <aside class="toc" aria-label="Table des matières">
-      <p class="toc-label">On this page</p>
-      <a href="#how-it-works">How it works</a>
-      <a href="#data-handling">Data handling</a>
-      <a href="#feedback">Feedback form</a>
-      <a href="#contact">Contact</a>
-    </aside>
-
+  <div class="page" style="grid-template-columns: 1fr;">
     <article class="content">
 
-      <section class="card" id="how-it-works">
-        <h2>How it works</h2>
+      <section class="card" id="status">
+        <h2>Status</h2>
         <div class="badge-row">
-          <span class="badge accent">Gemini 3.5 Flash Lite</span>
-          <span class="badge"><a href="https://discord.com/channels/1421603145074737254/1421763128852615219" target="_blank" rel="noopener">contribute here</p> </span>
+          <span class="badge accent">WIP</span>
+          <span class="badge">There is currently no data.</span>
         </div>
-        <p>The Admin AI system currently runs on Gemini 3.5 Flash Lite. It calls the Gemini API directly from Discord, so there's no separate app, dashboard, or subscription involved on your end.</p>
-        <p>For general information about the underlying model itself, head to Google's own support pages.</p>
-      </section>
 
-      <section class="card" id="data-handling">
-        <h2>Data handling</h2>
-        <p>We do <strong>not</strong> store any of your information in any of our databases through this system.</p>
-        <p>The only information we do store is for SV+ members who explicitly accepted to be listed, so that the bot can answer questions other members ask about that specific person. Nothing is stored without that opt-in.</p>
-        <p>If you have any concerns, open a ticket and ask for it to be transferred to the development department.</p>
-      </section>
-
-      <section class="card" id="feedback">
-        <h2>Admin feedback form</h2>
-        <p>Got feedback on the Admin AI system? It goes through this Google Form:</p>
-        <div class="form-embed">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrPiqS9AEZWSFDJbAtGTzm3HL9K7Cw6VEXbUbJQ1IjYf2zeA/viewform?embedded=true" title="SCRTH Admin feedback application form" loading="lazy">Loading…</iframe>
+        <div class="chart-placeholder" aria-hidden="true">
+          <div class="bar" style="height: 35%"></div>
+          <div class="bar" style="height: 62%"></div>
+          <div class="bar" style="height: 48%"></div>
+          <div class="bar" style="height: 80%"></div>
+          <div class="bar" style="height: 55%"></div>
+          <div class="bar" style="height: 70%"></div>
         </div>
-        <p class="form-embed-fallback">If the form doesn't load, <a href="https://docs.google.com/forms/d/e/1FAIpQLScrPiqS9AEZWSFDJbAtGTzm3HL9K7Cw6VEXbUbJQ1IjYf2zeA/viewform" target="_blank" rel="noopener">open it directly in a new tab</a>.</p>
-      </section>
+        <p class="chart-note">Charts will land here once the data pipeline is finalized.</p>
 
-      <section class="card" id="contact">
-        <h2>Contact</h2>
-        <p>For questions, data requests, privacy concerns or anything related to the bots or the data process please contact via a <a href="https://discord.com/channels/1421603145074737254/1421763128852615219" target="_blank" rel="noopener">ticket</a>:</p>
-
-        <dl class="contact-list">
-          <div>
-            <dt>Innovation director</dt>
-            <dd>deadslights</dd>
-          </div>
-          <div>
-            <dt>Community director</dt>
-            <dd>Martysovec1234</dd>
-          </div>
-        </dl>
+        <blockquote class="quote">
+          In this page, there will be chart about the apps, we are working on it. If you wish to contribute, please head to deadslights and ask for it. We will be happy to have your help!
+          <cite>— Deadslights</cite>
+        </blockquote>
       </section>
 
     </article>

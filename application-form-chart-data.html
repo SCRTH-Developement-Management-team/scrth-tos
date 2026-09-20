@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +10,10 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <span class="brand">SCRTH</span>
+    <a class="brand" href="index.html" aria-label="SCRTH home">
+      <img src="https://images-ext-1.discordapp.net/external/XIGW6-AkXgL-zKJ_PazqP3YEymlPN2k58WCnh7IZr3c/https/message.style/cdn/images/fde4f74bac334b68717dabf56c3a1e40126b37e0a6cb617ad4eac33b327ba5ea.png?format=webp&amp;quality=lossless" alt="SCRTH logo">
+      <span>SCRTH</span>
+    </a>
     <nav class="top-nav" aria-label="Navigation principale">
       <a href="index.html">Privacy policy &amp; TOS</a>
       <a href="admin-ai-system.html">Admin AI system</a>
@@ -29,9 +32,10 @@
 
 <main>
   <section class="hero">
+    <img class="hero-logo" src="https://images-ext-1.discordapp.net/external/XIGW6-AkXgL-zKJ_PazqP3YEymlPN2k58WCnh7IZr3c/https/message.style/cdn/images/fde4f74bac334b68717dabf56c3a1e40126b37e0a6cb617ad4eac33b327ba5ea.png?format=webp&amp;quality=lossless" alt="SCRTH logo">
     <span class="eyebrow">Work in progress</span>
     <h1>Application form chart &amp; data</h1>
-    <p class="updated">Here will be shown stats about SCRTH apps, it will show most failed & passed questions, passrate etc...</p>
+    <p class="updated">This page is dedicated to the statistics about SCRTH applications, if you wish to contribute, please head to deadslights and ask for it. He would love to! There will never be any stats and feedback related to a specified user. This page also include internal applications. </p>
   </section>
 
   <div class="page" style="grid-template-columns: 1fr;">
@@ -40,22 +44,36 @@
       <section class="card" id="status">
         <h2>Status</h2>
         <div class="badge-row">
-          <span class="badge accent">WIP</span>
-          <span class="badge">There is currently no data.</span>
+          <span class="badge accent">Live data</span>
+          <span class="badge">Last update 19/09/2026 with SV-GD </span>
         </div>
 
-        <div class="chart-placeholder" aria-hidden="true">
-          <div class="bar" style="height: 35%"></div>
-          <div class="bar" style="height: 62%"></div>
-          <div class="bar" style="height: 48%"></div>
-          <div class="bar" style="height: 80%"></div>
-          <div class="bar" style="height: 55%"></div>
-          <div class="bar" style="height: 70%"></div>
+        <div class="chart" aria-label="Passed and failed application answers by category">
+          <div class="chart-legend"><span><i class="legend-dot passed"></i>Passed</span><span><i class="legend-dot failed"></i>Failed</span></div>
+          <div class="chart-plot">
+            <div class="chart-grid" aria-hidden="true"><span>6</span><i></i><span>4</span><i></i><span>2</span><i></i><span>0</span></div>
+            <div class="chart-bars">
+              <div class="chart-group category-ca"><div class="bar-pair"><span class="chart-bar passed" style="height: 0%"><b>0</b></span><span class="chart-bar failed" style="height: 16.7%"><b>1</b></span></div><strong>CA</strong><small class="passrate">0% passrate</small></div>
+              <div class="chart-group category-cd"><div class="bar-pair"><span class="chart-bar passed" style="height: 16.7%"><b>1</b></span><span class="chart-bar failed" style="height: 33.4%"><b>2</b></span></div><strong>CD/OD/ID</strong><small class="passrate">33,3% passrate</small></div>
+              <div class="chart-group category-om"><div class="bar-pair"><span class="chart-bar passed" style="height: 16.7%"><b>1</b></span><span class="chart-bar failed" style="height: 33.4%"><b>2</b></span></div><strong>OM/CM</strong><small class="passrate">33,3% passrate</small></div>
+              <div class="chart-group category-ds"><div class="bar-pair"><span class="chart-bar passed" style="height: 50%"><b>3</b></span><span class="chart-bar failed" style="height: 100%"><b>6</b></span></div><strong>SV-DS</strong><small class="passrate">33,3% passrate</small></div>
+              <div class="chart-group category-gd"><div class="bar-pair"><span class="chart-bar passed" style="height: 50%"><b>3</b></span><span class="chart-bar failed" style="height: 83.4%"><b>5</b></span></div><strong>SV-GD</strong><small class="passrate">37,5% passrate</small></div>
+              <div class="chart-group category-qd"><div class="bar-pair"><span class="chart-bar passed" style="height: 50%"><b>3</b></span><span class="chart-bar failed" style="height: 33.4%"><b>2</b></span></div><strong>SV-QD</strong><small class="passrate">60% passrate</small></div>
+              <div class="chart-group category-tsg"><div class="bar-pair"><span class="chart-bar passed" style="height: 16.7%"><b>1</b></span><span class="chart-bar failed" style="height: 0%"><b>0</b></span></div><strong>TSG</strong><small class="passrate">100% passrate</small></div>
+            </div>
+          </div>
         </div>
-        <p class="chart-note">Charts will land here once the data pipeline is finalized.</p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <caption>Application results by category</caption>
+            <thead><tr><th scope="col">Category</th><th scope="col">CA</th><th scope="col">CD/OD/ID</th><th scope="col">OM/CM</th><th scope="col">SV-DS</th><th scope="col">SV-GD</th><th scope="col">SV-QD</th><th scope="col">TSG</th></tr></thead>
+            <tbody><tr><th scope="row">Passed</th><td>0</td><td>1</td><td>1</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><th scope="row">Failed</th><td>1</td><td>2</td><td>2</td><td>6</td><td>5</td><td>2</td><td>0</td></tr></tbody>
+          </table>
+        </div>
 
         <blockquote class="quote">
-          In this page, there will be chart about the apps, we are working on it. If you wish to contribute, please head to deadslights and ask for it. We will be happy to have your help!
+          This page is still in developement, please give any feedback you have to deadslights (me) so we can improve this page. (you can get some xp ^^)
           <cite>— Deadslights</cite>
         </blockquote>
       </section>
@@ -65,6 +83,7 @@
 </main>
 
 <footer class="site-footer">
+  <img src="https://images-ext-1.discordapp.net/external/XIGW6-AkXgL-zKJ_PazqP3YEymlPN2k58WCnh7IZr3c/https/message.style/cdn/images/fde4f74bac334b68717dabf56c3a1e40126b37e0a6cb617ad4eac33b327ba5ea.png?format=webp&amp;quality=lossless" alt="SCRTH logo">
   <p>SCRTH 2025-2026 © | All rights reserved.</p>
 </footer>
 

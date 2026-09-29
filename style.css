@@ -253,6 +253,47 @@ code, .mono{ font-family: var(--font-mono); }
   transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
+.recruitment-card{
+  padding: clamp(28px, 5vw, 48px);
+  background: var(--bg-card);
+}
+.recruitment-status{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-bottom: 18px;
+  color: #a6e8c0;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+.recruitment-status span{
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #47b875;
+  box-shadow: 0 0 12px rgba(71, 184, 117, 0.65);
+}
+.card.recruitment-card h2{
+  max-width: 22ch;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+}
+.recruitment-card p{ margin-bottom: 24px; }
+.recruitment-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 7px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  transition: background 180ms ease, transform 180ms ease;
+}
+.recruitment-cta:hover{ background: var(--accent-dim); color: #fff; transform: translateY(-2px); }
+
 .card h2{
   font-family: var(--font-display);
   font-size: 1.4rem;

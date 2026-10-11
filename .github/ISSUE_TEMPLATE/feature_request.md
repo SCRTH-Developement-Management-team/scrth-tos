@@ -1,9 +1,10 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+about: Suggest an idea for SCRTH TOS main website
+title: '[SUGGESTION] "the suggestion" ex: add deadslight''s feet to main page'
+labels: enhancement
+assignees: DeadsLights
+type: Feature
 
 ---
 
